@@ -8,20 +8,20 @@ classes_to_use = [3, 5]  # gato=3, cachorro=5, como só queremos classificar gat
 
 Foi dividido em conjustos de testes e treinamento como solicitado, utilizando a postura de 80% para treino e 20% para teste, utilizando também o random_state = 42 para garantir que o output vai ser sempre o mesmo.
 
-**layers.Conv2D(32, (3,3), activation='relu', input_shape=(32, 32, 3))**
+##**layers.Conv2D(32, (3,3), activation='relu', input_shape=(32, 32, 3))**
 
 Na construção da CNN, foi aplicado 32 kernels de tamanho 3x3 sobre a imagem e depois usado a função de ativação 'RELU', a função de ativação RELU ajuda a melhorar o treinamento e evitar o problema do gradiente zero.
 
 
-**layers.MaxPooling2D((2,2)),**
+##**layers.MaxPooling2D((2,2)),**
 
 Redimensionamento da imagem para um valor máximo de 2x2.
 
-**layers.Conv2D(64, (3,3), activation='relu'),**
+##**layers.Conv2D(64, (3,3), activation='relu'),**
 
 Agora foi aplicado 64 kernels de tamanho 3x3 sobre a imagem e também foi utilzado a função de ativação 'RELU'
 
-**layers.Flatten(),**
+##**layers.Flatten(),**
 
 Transforma as características em um vetor de 1 dimensão
 
