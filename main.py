@@ -59,11 +59,6 @@ print(f"Precisão: {precision:.4f}")
 print(f"Recall: {recall:.4f}")
 print(f"F1-Score: {f1:.4f}")
 
-import cv2
-import os
-import numpy as np
-import matplotlib.pyplot as plt
-
 # Caminho das imagens
 path = ".\imagens"
 image_files = os.listdir(path)
