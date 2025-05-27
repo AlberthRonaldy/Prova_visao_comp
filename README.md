@@ -48,7 +48,7 @@ Foi feito as métricas de precisão, recall e f1-score, a f1-score é a mais imp
 - Filtragem para usar apenas as classes de gatos e cachorros
 - Mapeamento de rótulos entre 0(gatos) e 1(cachorros)
 - Divisão de dados em treinamento e teste
-- Criação da Arquitetura da CNN
+- Criação da Arquitetura do algoritmo CNN
 - Compilação do modelo
 - Treinamento do modelo
 - Predição e métricas avaliadas
