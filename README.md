@@ -2,7 +2,7 @@
 
   O algoritmo tem como objetivo classificar imagens de dois tipos de animais: gatos e cachorros. Para isso, ele utiliza um modelo de rede neural convolucional (CNN) treinado com imagens do dataset CIFAR-10 passado como exemplo em sala de aula. É um problema de classificação de imagens, que o algoritmo consegue distinguir entre gatos (0) e cachorros (1)
 
-**Justificativa das técnicas utilizadas**
+# Justificativa das técnicas utilizadas
 
 classes_to_use = [3, 5]  # gato=3, cachorro=5, como só queremos classificar gatos e cachorros, foi pego o índice de cada um para as classificar as respectivas classes.
 
