@@ -13,37 +13,35 @@ Foi dividido em conjustos de testes e treinamento como solicitado, utilizando a 
 Na construção da CNN, foi aplicado 32 kernels de tamanho 3x3 sobre a imagem e depois usado a função de ativação 'RELU', a função de ativação RELU ajuda a melhorar o treinamento e evitar o problema do gradiente zero.
 
 
-##**layers.MaxPooling2D((2,2)),**
+### layers.MaxPooling2D((2,2))
 
 Redimensionamento da imagem para um valor máximo de 2x2.
 
-##**layers.Conv2D(64, (3,3), activation='relu'),**
+### layers.Conv2D(64, (3,3), activation='relu') 
 
 Agora foi aplicado 64 kernels de tamanho 3x3 sobre a imagem e também foi utilzado a função de ativação 'RELU'
 
-##**layers.Flatten(),**
+### layers.Flatten()
 
 Transforma as características em um vetor de 1 dimensão
 
-**layers.Dense(64, activation='relu'),**
+### layers.Dense(64, activation='relu')
 
 Uma camada com 64 neurônios de saída e usando ativação 'RELU'.
 
-**layers.Dense(1, activation='sigmoid'),**
+### layers.Dense(1, activation='sigmoid')
 
 Uma camada de saída com 1 neurônio, a função sigmoid retorna um valor entre 0 e 1, muito boa pois estamos utilizando classificação binária.
 
-**model.compile(optimizer='adam',
-              loss='binary_crossentropy',
-              metrics=['accuracy'])**
+### model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 Configuração do modelo para treinar, optimizer='adam' algoritmo de otimização que ajusta os pesos, loss='binary_crossentropy' é a função de perda, mede a diferença entre a predição.
 
-**Cálculo das métricas**
+# Cálculo das métricas
 
 Foi feito as métricas de precisão, recall e f1-score, a f1-score é a mais importante pois mostra o balanceamentro entre a precisão e o recall,
 
-> **Etapas realizadas**
+# Etapas realizadas
 
 - Importação das bibliotecas
 - Carregamento e normalização do dataset
@@ -56,7 +54,7 @@ Foi feito as métricas de precisão, recall e f1-score, a f1-score é a mais imp
 - Predição e métricas avaliadas
 - Carregamento das imagens originais para serem classificadas pelo modelo de classificação.
 
-> **Resultados Obtidos**
+# Resultados Obtidos
 
 Precisão: 0.8065
 Recall: 0.6808
@@ -64,10 +62,10 @@ F1-Score: 0.7384
 
 O modelo previu 5 imagens corretas das 6 imagens, ele não conseguiu classificar corretamente 1 imagem.
 
-> **Tempo Total Gasto**
+# Tempo Total Gasto
 
 O treinamento demorou 200 segundos para finalizar.
 
-> **Dificuldades encontradas**
+# Dificuldades encontradas
 
-Uma das dificuldades que eu encontrei foi o overfitting, conforme eu tentava arrumar os parâmetros, a accuracy acabava piorando.
+Uma das dificuldades que eu encontrei foi o overfitting, não tendo um bom desempenho testando com as 6 imagens solicitadas.
